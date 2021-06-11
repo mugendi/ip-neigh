@@ -2,6 +2,8 @@
 
 let neigh = require(".");
 
+
+
 neigh()
   .then((resp) => {
     console.log(resp);

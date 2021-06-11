@@ -4,10 +4,10 @@ const { exec } = require("child_process"),
 module.exports = () => {
   return new Promise((resolve, reject) => {
     exec("ip neigh show", (error, stdout, stderr) => {
+      //reject on error
       if (error) {
         return reject(error.message);
-      }
-      if (stderr) {
+      } else if (stderr) {
         return reject(stderr);
       }
 
@@ -17,16 +17,17 @@ module.exports = () => {
         .map(to_obj);
 
       resolve(table);
-
     });
   });
-
 };
 
 function to_obj(stdout) {
   let m,
     a,
-    ip = (interface = mac = state = null);
+    ip = null,
+    interface = null,
+    mac = null,
+    state = null;
 
   if (
     ipRegex().test(stdout) &&

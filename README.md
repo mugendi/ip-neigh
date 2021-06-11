@@ -4,10 +4,10 @@ Get the IPv4 neighbour table (also known as the ARP table) and display as json a
 ```json
 [
   {
-    ip: '192.168.188.1',
-    interface: 'wlp3s0',
-    mac: '74:f8:db:64:ca:a1',
-    state: 'REACHABLE'
+    "ip": "192.168.188.1",
+    "interface": "wlp3s0",
+    "mac": "74:f8:db:64:ca:a1",
+    "state": "REACHABLE"
   }
 ]
 ```

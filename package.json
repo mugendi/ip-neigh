@@ -1,0 +1,33 @@
+{
+  "name": "neighbour",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./test.js"
+  },
+  "dependencies": {
+    "ip-regex": "^4.3.0"
+  },
+  "description": "run \"ip neigh show\" in node and return parsed entities",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugendi/ip-neigh.git"
+  },
+  "keywords": [
+    "ip",
+    "neigh",
+    "neighbour",
+    "show",
+    "mac",
+    "address",
+    "connected",
+    "devices"
+  ],
+  "author": "Anthony Mugendi <ngurumugz@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mugendi/ip-neigh/issues"
+  },
+  "homepage": "https://github.com/mugendi/ip-neigh#readme"
+}
